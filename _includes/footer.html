@@ -4,26 +4,31 @@
             <div class="container">
                 <div class="row">
                     <div class="footer-col col-md-4">
-                        <h3>{{ site.footer.location }}</h3>
-                        <p>
-                            {% for adress in site.address %}
-                                {{ adress.line }} <br>
-		                    {% endfor %}
-                        </p>
+                        <h3>借我</h3>
+                        <p>纵容的悲怆与哭喊</p>
+                        <p>安适的清晨与傍晚</p>
                     </div>
                     <div class="footer-col col-md-4">
-                        <h3>{{ site.footer.social }}</h3>
+                        <h3>相关链接</h3>
                         <ul class="list-inline">
-                            {% for network in site.social %}
                             <li>
-                                <a href="{{ network.url }}" class="btn-social btn-outline"><i class="fa fa-fw fa-{{ network.title }}"></i></a>
+                                <a href="https://whatwhyhow7.github.io/" target="_blank" class="btn-social btn-outline"><i class="fa fa-fw fa-wordpress"></i></a>
                             </li>
-		                    {% endfor %}
+                            <li>
+                                <a href="https://whatwhyhow7.github.io/blog" target="_blank" class="btn-social btn-outline"><i class="fa fa-fw fa-edit"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://whatwhyhow7.github.io/photo" target="_blank" class="btn-social btn-outline"><i class="fa fa-fw fa-photo"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://whatwhyhow7.github.io/cook" target="_blank" class="btn-social btn-outline"><i class="fa fa-fw fa-apple"></i></a>
+                            </li>
                         </ul>
                     </div>
                     <div class="footer-col col-md-4">
-                        <h3>{{ site.footer.credits }}</h3>
-                        <p>{{ site.credits }}</p>
+                        <h3>给你</h3>
+                        <p>跳动的心儿可不可以</p>
+                        <p>拉紧的手儿可不可以</p>
                     </div>
                 </div>
             </div>
@@ -31,9 +36,8 @@
         <div class="footer-below">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-12">
-                        Copyright &copy; {{ site.footer.copyright }} 20{{ site.time | date: '%y' }}
-                    </div>
+                    <div class="col-lg-12">Copyright &copy; <a href="https://github.com/whatwhyhow7/video" target="_blank">whatwhyhow7</a> ❤ 20{{ site.time | date: '%y' }}</div>
+                    <div class="col-lg-12">Powered by <a href="https://github.com/jeromelachaud/freelancer-theme" target="_blank">freelancer-theme</a></div>
                 </div>
             </div>
         </div>

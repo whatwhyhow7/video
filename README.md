@@ -1,10 +1,10 @@
-# whatwhyhow7's video 📹
+# whatwhyhow7's vlog 📹
 
-这是 [@whatwhyhow7](https://whatwhyhow7.github.io/video) 的个人 Vlog 小站。
+这是 [@whatwhyhow7](https://whatwhyhow7.github.io/video) 的个人 vlog 小站。
 
 ## 主要内容
 
-记录平时的吉他弹唱、台球视频、Vlog 等。
+记录平时的吉他弹唱、台球视频、vlog 等。
 
 ## 申明和感谢
 

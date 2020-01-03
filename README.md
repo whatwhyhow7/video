@@ -1,32 +1,19 @@
-Freelancer Jekyll theme  [![Build Status](https://api.travis-ci.org/jeromelachaud/freelancer-theme.svg?branch=master)](https://travis-ci.org/jeromelachaud/freelancer-theme/) 
-=========================
+# whatwhyhow7's video 📹
 
-Jekyll theme based on [Freelancer bootstrap theme ](http://startbootstrap.com/template-overviews/freelancer/)
+这是 [@whatwhyhow7](https://whatwhyhow7.github.io/video) 的个人 Vlog 小站。
 
-## How to use
- - Place a image in `/img/portfolio/`
- - Replace `your-email@domain.com` in `_config.yml` with your email address. Refer to [formspree](http://formspree.io/) for more information.
- - Create posts to display your projects. Use the follow as an example:
-```txt
----
-layout: default
-modal-id: 1
-date: 2014-07-18
-img: cabin.png
-alt: image-alt
-project-date: July 2014
-client: The Client
-category: Web Development
-description: The description of the project
+## 主要内容
 
----
+记录平时的吉他弹唱、台球视频、Vlog 等。
+
+## 申明和感谢
+
+使用 `jekyll` 搭建并借用了以下主题模板，特此申明并感谢：
+
+- [jeromelachaud / freelancer-theme](https://github.com/jeromelachaud/freelancer-theme)
+
+## 本地启动
+
+```shell
+jekyll serve -w
 ```
-
-## Demo
-View this jekyll theme in action [here](https://jeromelachaud.github.io/freelancer-theme)
-
-## Screenshot
-![screenshot](https://raw.githubusercontent.com/jeromelachaud/freelancer-theme/master/screenshot.png)
-
----------
-For more details, read the [documentation](http://jekyllrb.com/)

@@ -4,8 +4,7 @@
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
                 <div class="lr">
-                    <div class="rl">
-                    </div>
+                    <div class="rl"></div>
                 </div>
             </div>
             <div class="container">
@@ -14,29 +13,24 @@
                         <div class="modal-body">
                             <h2>{{ post.title }}</h2>
                             <hr class="star-primary">
-                            <img src="img/portfolio/{{ post.img }}" class="img-responsive img-centered" alt="{{ post.alt }}">
-                            {% if post.description %}
-                                <p>{{ post.description }}</p>
+
+                            {% if post.text %}
+                                <h4 style="margin: 20px 0;">{{ post.text }}</h4>
                             {% endif %}
+
+                            {% if post.video %}
+                                <p>{{ post.video }}</p>
+                            {% endif %}
+                            
+                            {% if post.iframe %}
+                                <p>{{ post.iframe }}</p>
+                            {% endif %}
+                            
                             <ul class="list-inline item-details">
-                                {% if post.client %}
-                                    <li>Client:
+                                {% if post.music %}
+                                    <li>网易云音乐:
                                         <strong>
-                                            <a href="http://startbootstrap.com">{{ post.client }}</a>
-                                        </strong>
-                                    </li>
-                                {% endif %}
-                                {% if post.project-date %}
-                                    <li>Date:
-                                        <strong>
-                                            <a href="http://startbootstrap.com">{{ post.project-date }}</a>
-                                        </strong>
-                                    </li>
-                                {% endif %}
-                                {% if post.category %}
-                                    <li>Service:
-                                        <strong>
-                                            <a href="http://startbootstrap.com">{{ post.category }}</a>
+                                            <a href="{{ post.music }}" target="_blank">{{ post.song }}</a>
                                         </strong>
                                     </li>
                                 {% endif %}

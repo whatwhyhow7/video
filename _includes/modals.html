@@ -1,6 +1,6 @@
  <!-- Portfolio Modals -->
  {% for post in site.posts %}
-    <div class="portfolio-modal modal fade" id="portfolioModal-{{ post.modal-id }}" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="portfolio-modal modal fade" id="portfolioModal-{{ post.date | date: '%Y%m%d' }}" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
                 <div class="lr">
@@ -12,30 +12,32 @@
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
                             <h2>{{ post.title }}</h2>
+
                             <hr class="star-primary">
+
+                            <h3>{{ post.date | date: "%Y.%m.%d" }}</h3>
 
                             {% if post.text %}
                                 <h4 style="margin: 20px 0;">{{ post.text }}</h4>
                             {% endif %}
 
                             {% if post.video %}
-                                <p>{{ post.video }}</p>
+                                {{ post.video }}
                             {% endif %}
                             
                             {% if post.iframe %}
-                                <p>{{ post.iframe }}</p>
+                                {{ post.iframe }}
                             {% endif %}
                             
-                            <ul class="list-inline item-details">
-                                {% if post.music %}
-                                    <li>网易云音乐:
-                                        <strong>
-                                            <a href="{{ post.music }}" target="_blank">{{ post.song }}</a>
-                                        </strong>
-                                    </li>
-                                {% endif %}
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            {% if post.music %}
+                            <h4 style="margin: 20px 0;"><a href="{{ post.music }}" target="_blank">网易云音乐</a></h4>
+                            {% endif %}
+
+                            {% if post.guitar %}
+                                <h4 style="margin-bottom: 40px;"><a href="{{ post.guitar }}" target="_blank">吉他谱</a></h4>
+                            {% endif %}
+
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> 关闭</button>
                         </div>
                     </div>
                 </div>
